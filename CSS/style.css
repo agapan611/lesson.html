@@ -1,0 +1,202 @@
+body{
+    font-family: "Noto Sans JP", verdana, arial, helvetica, sans-serif;
+    font-size: 16px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu>a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: darkgrey;
+}
+
+
+
+.vsual{
+    background-image: url(../img/main-vsual.png);
+    background-size: cover;
+    height: 400px;
+}
+h2,h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.order{
+    width: 88%;
+    margin: 80px auto;
+}
+.about1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    line-height: 25px;
+}
+.aboutimg{
+    width: 45%;
+}
+.about2{
+    width: 45%;
+    text-align: left;
+}
+
+.course{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.course1{
+    width: 29%;
+}
+.vsual2{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.mail{
+    margin-top: 40px;
+}
+.mail>p{
+    margin-bottom: 5px;
+}
+form{
+    display: inline-block;
+}
+input{
+    border: 1px solid darkgrey;
+    width: 100%;
+    line-height: 2.5;
+    border-radius: 25px;
+    padding: 5px 20px;
+    margin: 0 auto;
+    text-align: start;
+    font-size: 13px;
+}
+button{
+    width: 300px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: rgb(215, 51, 85);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 6px 0 0 rgb(145 0 29);
+}
+
+button:active{
+    box-shadow: none;
+    position: relative;
+    top: 6px;
+}
+
+footer{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    text-align: right;
+    padding: 15px;
+    border-top: solid 1px rgb(170, 170, 170);
+}
+
+
+@media screen and (max-width: 480px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+    
+    .menu {
+        width: 60%;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+
+    h2,h3{
+        font-size: 48px;
+    }
+
+    .about1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutimg{
+        width: 100%;
+    }
+
+    .about2{
+        font-size: 32px;
+        width: 100%;
+        margin-top: 20px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .course{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course1{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .course1>p{
+        font-size: 32px;
+    }
+
+    .mail>p{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    input{
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    button{
+        width: 100%;
+        font-size: 32px;
+    }
+
+    footer{
+        font-size: 25px;
+        text-align: center;
+    }
+}
